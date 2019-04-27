@@ -20,3 +20,6 @@ SELECT * FROM artists WHERE _id = 133;
 
 SELECT songs.track, songs.title, albums.name FROM songs JOIN albums ON songs.album = albums._id;
 
+SELECT track, title, name FROM sings JOIN albums ON songs.album = alnums._id;
+
+SELECT songs.track, songs.title, albums.name FROM songs INNER JOIN albums ON songs.album = albums._id;
