@@ -23,3 +23,13 @@ SELECT songs.track, songs.title, albums.name FROM songs JOIN albums ON songs.alb
 SELECT track, title, name FROM sings JOIN albums ON songs.album = alnums._id;
 
 SELECT songs.track, songs.title, albums.name FROM songs INNER JOIN albums ON songs.album = albums._id;
+
+SELECT albums.name, songs.track, songs.title FROM songs INNER JOIN albums ON songs.album = albums._id ORDER BY albums.name, songs.track; 
+
+-- make a list of all artists with their albums in alphabetical order of artist name:
+
+SELECT artists.name, albums.name FROM albums INNER JOIN artists ON albums.artist = artists._id ORDER BY artists.name;
+
+-- chaining join statements together:
+
+SELECT artists.name, albums.name, songs.track, songs.title FROM songs INNER JOIN albums ON songs.album = albums._id INNER JOIN artists ON albums.artist = artists._id ORDER BY artists.name, albums.name, songs.track;
