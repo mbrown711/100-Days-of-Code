@@ -33,3 +33,21 @@ SELECT artists.name, albums.name FROM albums INNER JOIN artists ON albums.artist
 -- chaining join statements together:
 
 SELECT artists.name, albums.name, songs.track, songs.title FROM songs INNER JOIN albums ON songs.album = albums._id INNER JOIN artists ON albums.artist = artists._id ORDER BY artists.name, albums.name, songs.track;
+
+-- show titles of all songs on the album titled "Forbidden":
+
+SELECT songs.title FROM songs INNER JOIN albums ON songs.album = albums._id WHERE albums.name = "Forbidden";
+
+-- show songs from above in track order, include track number to verify
+
+SELECT songs.track, songs.title FROM songs INNER JOIN albums ON songs.album = albums._id WHERE albums.name = "Forbidden" ORDER BY songs.track;
+
+-- Display all songs by the band "Deep Purple"
+
+SELECT songs.title FROM songs INNER JOIN albums ON songs.album = albums._id INNER JOIN artists ON albums.artist = artists._id WHERE artists.name = "Deep Purple";
+
+-- Rename the band Billy Joel to "one kitten"
+
+UPDATE artists SET name = "One Kitten" WHERE artists.name = "Billy Joel";
+
+SELECT * FROM artists WHERE name = "One Kitten";
