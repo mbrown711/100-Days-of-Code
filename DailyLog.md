@@ -17,3 +17,12 @@
 ## 4/27/19
 
 - Going to really hit it hard with Python Crash Course and Linux Basics for Hacking. Not really sure how I'm going to show the code for LBFH, since it's mainly scripts and talking to the terminal, but I'm sure I'll figure it out.
+
+## 4/28/19
+
+- Did a lot of python practice
+- continued to work on the friends database app from udemy
+
+## 4/29/19
+
+- Have an hour before class to code, python practice
