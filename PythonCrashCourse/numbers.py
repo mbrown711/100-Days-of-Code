@@ -25,3 +25,20 @@ squares2 = []
 for square_values2 in range(1, 11):
     squares2.append(square_values2**2)
 print("Squares2 list:", squares2)
+
+# some statistics in python:
+digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+min = min(digits)
+print("Min in digits = ", min)
+
+max = max(digits)
+print("Max in digits = ", max)
+
+sum = sum(digits)
+print("Sum in digits = ", sum)
+
+# list comprehension example below - combines for loop and creation in one line
+# and automatically appends them
+squares_comprehension = [value**2 for value in range (1, 11)]
+print("Squares made via list comprehension:", squares_comprehension)
