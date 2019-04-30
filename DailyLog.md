@@ -26,3 +26,7 @@
 ## 4/29/19
 
 - Have an hour before class to code, python practice
+
+## 4/30/19
+
+- Focusing on Linux Basics for Hackers today before class
