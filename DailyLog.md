@@ -30,3 +30,8 @@
 ## 4/30/19
 
 - Focusing on Linux Basics for Hackers today before class
+
+# 5/1/19
+
+- Started a new udemy algorithms course
+- A little bit of python crash course
