@@ -35,3 +35,8 @@
 
 - Started a new udemy algorithms course
 - A little bit of python crash course
+
+# 5/2/19
+
+- Worked a lot with configuring JDBC with intellij to get ready for DBMS project
+- Worked on Java master class on Udemy using JDBC with SQLite3 - more for practicing for DBMS project
