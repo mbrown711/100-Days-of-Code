@@ -40,3 +40,9 @@
 
 - Worked a lot with configuring JDBC with intellij to get ready for DBMS project
 - Worked on Java master class on Udemy using JDBC with SQLite3 - more for practicing for DBMS project
+
+# 5/3/19
+
+- Worked on JDBC and sqlite3
+- Worked on ```insertContact()``` method for DBMS project
+- Getting close to knowing how to comfortably complete it; just need to use mysql instead of sqlite3
