@@ -16,15 +16,19 @@ public class MethodsForSQLInsertion {
             Connection conn = DriverManager.getConnection(CONNECTION_STRING);
             Statement statement = conn.createStatement();
             statement.execute("DROP TABLE IF EXISTS " + TABLE_CONTACTS);
+
             statement.execute("CREATE TABLE IF NOT EXISTS " + TABLE_CONTACTS + " (" + COLUMN_NAME + " text, " + COLUMN_PHONE + " integer, " + COLUMN_EMAIL + " text" + ")");
 
-            statement.execute("INSERT INTO " + TABLE_CONTACTS + " (" + COLUMN_NAME + ", " + COLUMN_PHONE + ", " + COLUMN_EMAIL + " ) " + "VALUES('Matt', 7818645115, 'matt@email.com')");
+            //use this method instead of the statements below:
+            insertContact(statement, "Joe", 1234543, "joe@joespizza.com");
 
-            statement.execute("INSERT INTO " + TABLE_CONTACTS + " (" + COLUMN_NAME + ", " + COLUMN_PHONE + ", " + COLUMN_EMAIL + " ) " + "VALUES('Dalila', 7362718273, 'dalila@google.com')");
+            statement.execute("INSERT INTO " + TABLE_CONTACTS + " (" + COLUMN_NAME + ", " + COLUMN_PHONE + ", " + COLUMN_EMAIL + " ) " + "VALUES('Matt', 7818115, 'matt@email.com')");
 
-            statement.execute("INSERT INTO " + TABLE_CONTACTS + " (" + COLUMN_NAME + ", " + COLUMN_PHONE + ", " + COLUMN_EMAIL + " ) " + "VALUES('Bailey', 8746388222, 'bailey@barkbark.com')");
+            statement.execute("INSERT INTO " + TABLE_CONTACTS + " (" + COLUMN_NAME + ", " + COLUMN_PHONE + ", " + COLUMN_EMAIL + " ) " + "VALUES('Dalila', 7361273, 'dalila@google.com')");
 
-            statement.execute("UPDATE " + TABLE_CONTACTS + "SET " + COLUMN_PHONE + " = 6444444444" + " WHERE " + COLUMN_NAME + " = Dalila");
+            statement.execute("INSERT INTO " + TABLE_CONTACTS + " (" + COLUMN_NAME + ", " + COLUMN_PHONE + ", " + COLUMN_EMAIL + " ) " + "VALUES('Bailey', 8748822, 'bailey@barkbark.com')");
+
+            statement.execute("UPDATE " + TABLE_CONTACTS + "SET " + COLUMN_PHONE + " = 6444444" + " WHERE " + COLUMN_NAME + " = Dalila");
 
             statement.execute("DELETE FROM " + TABLE_CONTACTS + " WHERE" + COLUMN_NAME + " = 'Matt'");
 
