@@ -43,7 +43,7 @@ public class MethodsForSQLInsertion {
         }
     }
     //below are example/practice methods to use for the DBMS java project
-    private static void insertContact(Statement statement, String name, int phone, String email) {
-        
+    private static void insertContact(Statement statement, String name, int phone, String email) throws SQLException {
+        statement.execute("INSERT INTO " + TABLE_CONTACTS + " (" + COLUMN_NAME + ", " + COLUMN_PHONE + ", " + COLUMN_EMAIL + " ) " + "VALUES('" + name + "', " + phone + ",'" + email + "')");
     }
 }
