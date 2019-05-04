@@ -31,17 +31,17 @@
 
 - Focusing on Linux Basics for Hackers today before class
 
-# 5/1/19
+## 5/1/19
 
 - Started a new udemy algorithms course
 - A little bit of python crash course
 
-# 5/2/19
+## 5/2/19
 
 - Worked a lot with configuring JDBC with intellij to get ready for DBMS project
 - Worked on Java master class on Udemy using JDBC with SQLite3 - more for practicing for DBMS project
 
-# 5/3/19
+## 5/3/19
 
 - Worked on JDBC and sqlite3
 - Worked on ```insertContact()``` method for DBMS project
