@@ -11,14 +11,17 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // Get a submitted paper’s details by the author’s Primary Key. The query should return the following data (columns):
+        // Paper.Id, Paper.Title, Paper.Abstract, Author.EmailAddress, Author.FirstName, Author.LastName
         String sqlQuery = "SELECT * FROM paper WHERE Id = 3";
+        String sqlJoin = "SELECT FROM AUTHOR INNER JOIN PAPER ON Id = 3";
         //String sqlInsert = "INSERT INTO name_table (name, surname, age) VALUES (?, ?, ?)";
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection(URL + DB, USER, PASSWORD);
 
-            PreparedStatement preparedStatement = conn.prepareStatement(sqlQuery);
+            PreparedStatement preparedStatement = conn.prepareStatement(sqlJoin);
             //preparedStatement.setString(1, "Jones"); <-- use to select a particular instance
             ResultSet results = preparedStatement.executeQuery();
 
@@ -50,4 +53,9 @@ public class Main {
         }
 
     }
+
+    //below are example/practice methods to use for the DBMS java project
+//    private static void newPaper (Statement statement, String name, int phone, String email) throws SQLException {
+//        statement.execute("INSERT INTO " + TABLE_CONTACTS + " (" + COLUMN_NAME + ", " + COLUMN_PHONE + ", " + COLUMN_EMAIL + " ) " + "VALUES('" + name + "', " + phone + ",'" + email + "')");
+//    }
 }
