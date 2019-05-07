@@ -51,3 +51,7 @@
 
 - Couldn't code yesterday - felt like absolute garbage. Feeling better today. Luckily we can miss one day, then add it at the end of the 100 days to make up for it.
 - Today's plan is to work on DBMS project and to work start work on parallel programming project (just assigned yesterday and due on 5/12).
+
+## 5/6/19
+
+- Worked on parallel programming assignment.
