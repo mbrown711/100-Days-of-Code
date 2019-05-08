@@ -55,3 +55,12 @@
 ## 5/6/19
 
 - Worked on parallel programming assignment.
+
+## 5/7/19
+
+- Worked on parallel programming assignment and completed question 4.
+
+## 5/8/19
+
+- Working on question 3 of parallel programming assignment.
+- Working on JDBC assignment for DBMS class.

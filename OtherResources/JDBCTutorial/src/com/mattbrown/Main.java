@@ -14,16 +14,16 @@ public class Main {
         // Get a submitted paper’s details by the author’s Primary Key. The query should return the following data (columns):
         // Paper.Id, Paper.Title, Paper.Abstract, Author.EmailAddress, Author.FirstName, Author.LastName
         String sqlQuery = "SELECT * FROM paper WHERE Id = 3";
-        String sqlJoin = "SELECT FROM AUTHOR INNER JOIN PAPER ON Id = 3";
+        String sqlJoin = "SELECT * FROM AUTHOR INNER JOIN PAPER ON Id = 3";
         //String sqlInsert = "INSERT INTO name_table (name, surname, age) VALUES (?, ?, ?)";
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection(URL + DB, USER, PASSWORD);
 
-            PreparedStatement preparedStatement = conn.prepareStatement(sqlJoin);
+            PreparedStatement preparedStatement = conn.prepareStatement(sqlQuery);
             //preparedStatement.setString(1, "Jones"); <-- use to select a particular instance
-            ResultSet results = preparedStatement.executeQuery();
+            ResultSet results = preparedStatement.executeQuery(sqlJoin);
 
 //            PreparedStatement preparedInsert = conn.prepareStatement(sqlInsert);
 //            String myName = "Matt";
