@@ -40,3 +40,20 @@ if age >= 18:
     print("Have you registered to vote?")
 else:
     print("Sorry, not old enough to vote yet")
+
+# Checking if a value is in a list - use keyword 'in':
+
+requested_toppings = ['mushrooms', 'onions', 'pineabble']
+print('mushrooms' in requested_toppings)
+print('pepperoni' in requested_toppings)
+
+# checking if a user is not in a list - use 'not in'
+
+banned_users = ['andrew', 'matt', 'david']
+user = 'marie'
+if user not in banned_users:
+    print(user.title() + ", you can post a response if you'd like")
+
+# boolean expressions need to be capitalized (True and False)
+game_active = True
+can_edit = False
