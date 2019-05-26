@@ -16,3 +16,16 @@ for num in range(10):
 
 for num in range(10, 20, 2):
     print(num)
+
+# add up all odd numbers between 10 and 20 (inclusive):
+x = 0
+for n in range (10, 21):
+    if n % 2 != 0:
+        x += n
+
+print(f"The sum is {x}")
+# OR by using range:
+x = 0
+for i in range(11, 21, 2):
+    x += i
+print(f"The sum using range is {x}")
