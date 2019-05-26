@@ -10,3 +10,9 @@ for x in range(1, 10):
 for letter in "coffee":
     print(letter)
     print(letter * 10)
+
+for num in range(10):
+    print(num)
+
+for num in range(10, 20, 2):
+    print(num)
