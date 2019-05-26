@@ -61,3 +61,7 @@ number = 1
 while number <= 10:
     print(number)
     number += 1
+
+for x in range(3):
+    for num in range(1, 11):
+        print("\U0001f600 " * num)
