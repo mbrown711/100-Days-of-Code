@@ -158,3 +158,56 @@ print("...")
 print("Total number of aliens: " + str(len(aliens)))
 
 # A list in a dictionary:
+# Store information about a pizza being ordered:
+print("\nA list in a dictionary:")
+print("Store information about a pizza being ordered:")
+pizza = {
+    'crust' : 'thick',
+    'toppings' : ['mushrooms', 'extra cheese'] # toppings has a list as a value
+}
+
+# Summarize the order:
+print("You ordered a " + pizza['crust'] + "-crust pizza with the following toppings:")
+for topping in pizza['toppings']:
+    print("\t" + topping)
+
+print("\nPutting a list inside a dictionary")
+favorite_languages = {
+    'jen': ['python', 'ruby'], #value associated with each key is now a list
+    'matt': ['java', 'python', 'solidity'],
+    'edward': ['ruby', 'go'],
+    'sarah': ['c'],
+    'phil': ['python', 'haskell'],
+}
+
+for name, languages in favorite_languages.items(): #languages holds each value from the dictionary
+    if len(languages) > 1:
+        print("\n" + name.title() + "'s favorite languages are:")
+    else:
+        print("\n" + name.title() + "'s favorite language is:")
+    for language in languages:
+        print("\t" + language.title())
+
+# A dictionary in a dictionary
+print("\nPrinting usernames...")
+users = { # defining a dictionary called users
+    'aeinstein': {
+        'first' : 'albert',
+        'last' : 'einstein',
+        'location' : 'princeton',
+    },
+
+    'mcurie' : {
+        'first' : 'marie',
+        'last' : 'curie',
+        'location' : 'paris',
+    }
+}
+
+for username, user_info in users.items():
+    print("\nUsername: " + username)
+    fullName = user_info['first'] + " " + user_info['last']
+    location = user_info['location']
+
+    print("\tFull name: " + fullName.title())
+    print("\tLocation: " + location.title())
